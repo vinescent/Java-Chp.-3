@@ -29,5 +29,14 @@ public class RomanNumeral {
         }
         
         System.out.println("The Roman numeral for" + number + " is: " + romanNumeral);
-    }5
+    }
 }
+
+/* Output (valid input):
+Enter a number between 1 and 5: 3
+The Roman numeral for 3 is: III
+
+Output (invalid input):
+Enter a number between 1 and 5: 6
+The Roman numeral for 6 is: Invalid input. Please enter a number between 1 and 5.
+*/
