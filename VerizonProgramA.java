@@ -23,10 +23,10 @@ public class VerizonProgramA {
         System.out.println("Please enter your plan (A, B, or C): ");
         String plan = kb.nextLine().toUpperCase();
 
-//        if (plan != "A" || plan != "B" || plan != "C") {
-//            System.out.println("Invalid input. Please enter A, B, or C: ");
-//            plan = kb.nextLine().toUpperCase();
-//        }
+        while (!"A".equals(plan) && !"B".equals(plan) && !"C".equals(plan)) {
+            System.out.println("Invalid input. Please enter A, B, or C: ");
+            plan = kb.nextLine().toUpperCase();
+       }
 
         // Set plan info vars based on selected plan
         if (plan.equals("A")) {
